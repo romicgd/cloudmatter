@@ -1,5 +1,5 @@
 # Site settings
-title: Realities of cloud deployments
+title: Cloud deployments - limitations, bugs, workarounds
 baseurl: "/cloudmatter" # the subpath of your site, e.g. /blog/
 
 # Build settings
