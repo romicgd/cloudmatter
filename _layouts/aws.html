@@ -1,0 +1,37 @@
+{% include head.html %}
+    
+   	<main role="main" style="display: inline;">
+
+   	{% if page.service-categories %}
+    	          {% for item in page.service-categories %}
+   	              <h2>{{ item.title }}
+   	              <a name="{{ item.hook }}">&nbsp;</a>
+   	              </h2>
+   	              <!-- Services within service category -->	
+   	              {% for p in site.pages %}
+   	               {% if p.service_category == item.hook  and p.parent == page.name%}
+   	                  <a  href="{{ site.baseurl }}{{ p.url }}" style="display: inline-block; width: 25%;">
+   	                      <img src="{{ site.baseurl }}{{ p.image }}" style="width:24px; height:24px%; display: inline; vertical-align:middle;"/>
+   	                      <div  style="display: inline; width: 100px;">{{ p.title }}</div>
+   	                  </a>
+   	              {% endif %}
+   	              {% endfor %}
+
+   	          {% endfor %}
+   	{% endif %}
+
+   	</main>
+   	
+       {% if page.service-categories %}
+       <div style="position:fixed;">
+                   <h3>Service Category</h3>
+                   <ul>
+                 {% for item in page.service-categories %}
+                     <li><a  href="#{{ item.hook }}">{{ item.title }}</a></li>
+                 {% endfor %}
+               </ul>
+         </div>
+       {% endif %}
+
+
+{% include foot.html %}

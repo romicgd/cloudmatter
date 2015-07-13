@@ -4,4 +4,4 @@ baseurl: "/cloudmatter" # the subpath of your site, e.g. /blog/
 
 # Build settings
 markdown: kramdown
-highlighter: rouge
+highlighter: pygments
