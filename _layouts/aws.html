@@ -1,6 +1,6 @@
 {% include head.html %}
-    
-   	<main role="main" style="display: inline;">
+    <div style="display: inline-block;width:80%; top: 100px; position:absolute; left:18%; ">
+   	<main role="main" style="display: inline; ">
 
    	{% if page.service-categories %}
     	          {% for item in page.service-categories %}
@@ -23,7 +23,7 @@
    	</main>
    	
        {% if page.service-categories %}
-       <div style="position:fixed;">
+       <div style="position:fixed; top: 100px; left:0;height: 100%; width: 18%; border-right: 2px solid grey; padding-top: 10px;">
                    <h3>Service Category</h3>
                    <ul>
                  {% for item in page.service-categories %}

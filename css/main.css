@@ -102,7 +102,7 @@ h6 {
 p, pre, blockquote, ul, ol, dl, figure, figcaption, table, fieldset, details {
 	font-size: 15px; 
 	line-height: 1.5; /* 24px */
-	margin: 0.5em 0; /* 8px 0 */
+	margin: 0 0; /* 8px 0 */
     }
 
 ol {
@@ -299,7 +299,7 @@ main {
     @media (min-width:20em) {
     main {
 	    float: right;
-	    width: 80%;
+	    width: 100%;
 	    clear: none;
         }
     }
@@ -526,16 +526,16 @@ main .img-wrapper {
 
 .nav-primary li a {
 	display: block;
-  border-style: solid;
+  border-style: none;
 	border-bottom: none;
 	color: #444;
 	padding: 8px 1em 6px 65px;
-	background-color: #fff;
+  background-color: rgb(127,255,200);
   height: 50px;
       }
 
 .nav-home li a {
-  padding: 8px 1em 6px 0px;
+  padding: 0px 0px 0px 0px;
   height: 58px;
     }
 
