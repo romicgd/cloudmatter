@@ -1,5 +1,7 @@
 ## Summary
-The purpose of this site is to provide suggestions and workarounds to deal with unexpected constraints and bugs encountered working with off-premise cloud (so far AWS, Azure). 
+The purpose of this site is to make deployment in off-premise cloud(e.g. AWS, Azure) easier and more robust. 
+
+Constraints, bugs, and potential pitfallsare listed with suggestions and workarounds.  
 
 Most of limitations and bugs are documented by cloud providers. This site will not repeat those. Rather it focuses on following scenarios: 
 

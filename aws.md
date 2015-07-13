@@ -2,7 +2,7 @@
 layout: aws
 title: Amazon Web Services
 cloud-provider: true
-image: /images/amazon-aws-logo.jpg
+image: /images/aws_logo_105x39.png
 service-categories:
   - { hook: "Compute", title: "Compute" }
   - { hook: "Storage_and_Content_Delivery", title: "Storage & Content Delivery" }
