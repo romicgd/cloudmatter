@@ -1,21 +1,32 @@
-Christmas Recipes
-=================
+## Summary
+The purpose of this site is to provide suggestions and workarounds to deal with unexpected constraints and bugs encountered working with off-premise cloud (so far AWS, Azure). 
 
-[View site, hosted on Github Pages](http://maban.github.io/christmas-recipes/)
+Most of limitations and bugs are documented by cloud providers. This site will not repeat those. Rather it focuses on following scenarios: 
 
-This is a demo site, accompanying a tutorial on 24 ways about [getting started with Git Pages and Jekyll](http://24ways.org/2013/get-started-with-github-pages/).
+* When no documentation has been found describing the encountered issue. 
+* When existing documentation does not adequately reflect potential impact of the issue.
 
-Recipes and images are licensed under a [Creative Commons Attribution/Share-Alike License](http://creativecommons.org/licenses/by-sa/3.0/).
+## Use
+Images on the left side of this page allow to navigate to information for the respective cloud provider.
 
-## Usage
+For each cloud provider:
 
-Files can be edited on the [Github site](https://github.com/maban/christmas-recipes/), or locally. For full instructions on how to edit files locally using Jekyll, [follow the tutorial on 24 ways](http://24ways.org/2013/get-started-with-github-pages/).
+* Issues are grouped by service offered by the provider.
+* Each issue will include the date when it has been encountered.
 
-Recipes are formatted in [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+## Example
+If you are considering setting up your database as AWS RDS instance you need to take into account the fact that you can not copy snapshots of RDS database instances from AWS account. Thus the security compromise of a single AWS account may  result in loss of your database **as well as all of your backups** (which is probably not what you intended). See [RDS]({{ site.baseurl }}/aws-rds.html) page for details and possible workarounds.
 
-Jekyll generates the raw files into the <i>_site</i> folder, so do no edit any of the files in here.
+## Scope
+So far: 
 
-## Further Reading
+* Amazon AWS
+* Microsoft Azure (WIP)
 
-* [About Jekyll](http://jekyllrb.com/)
-* [About GitHub Pages](http://pages.github.com/)
+## Disclaimer
+1. This site reflects personal experience. The information will be added/updated incrementally as new issues are discovered/fixed. If you would like to share your experience by adding information or find that posted information is incorrect please see **Contribution** section below.
+2. I'm not a front-end developer by any stretch of imagination: used github pages to setup basic templates and will improve UX time permitting but overall focus is on performing research, running tests and adding information (currently in form of markdown) - not on developing a fancy website. 
+
+## Contribution
+Please submit issues and pull requests. [See the code for this site on Github.](https://github.com/romicgd/cloudmatter).
+
