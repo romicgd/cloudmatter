@@ -2,7 +2,7 @@
 layout: recipe
 title: VPC
 cloud-service: true
-image: /images/aws-vpc.png
+image: /images/aws-VPC.png
 parent: aws.md
 service_category: Networking
 submenu:
