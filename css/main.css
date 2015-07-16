@@ -69,9 +69,9 @@ section article > h1 {
     }
     
 h4 {
-	color: #444;
-	font-weight: 400;
-	font-size: 1.125em; /* 18px */
+  color: rgb(111, 64,0);
+	font-weight: 600;
+	font-size: 1.12em; /* 18px */
 	line-height: 1.3334; /* 24px */
 	margin: 1.3334em 0 0.4444em; /* 24px 0 8px */
    -webkit-font-smoothing: antialiased;

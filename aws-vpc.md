@@ -83,5 +83,14 @@ All traffic outside of local VPC address range goes to your ENI attached to NAT 
     [ "$retcode" -eq 0 ] && { log "eni attachment successful" ; exit 0 ; } || { log "eni attachment failed" ; exit 1 ; }
     {% endhighlight %}
 
+#### Test 
+Connect to your instance on a public subnet, then ssh to the instance on a private subnet and try to access URL on internet. 
 
+![Outbound-Access-Test.png]({{ site.baseurl }}/images/AWS/Outbound-Access-Test.png)
+<br/>
+Then terminate your NAT instance. At this point you can observe that interface is no longer attached to the instance.
+![NAT-HA-detached_interface.png]({{ site.baseurl }}/images/AWS/NAT-HA-detached_interface.png)  
+<br/>
+You can refer to Auto Scaling Activity History to see when instance had to be recovered. 
 
+![NAT-Instance-Auto-Recovery.png]({{ site.baseurl }}/images/AWS/NAT-Instance-Auto-Recovery.png)  
